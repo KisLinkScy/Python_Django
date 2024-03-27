@@ -1,0 +1,38 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block title %}Свет{% endblock title %}
+    
+
+{% block content %} 
+    <div class="conteinr">
+      <div class="left">
+
+        <div class="nomer-scheta">
+          <input id="nomer-input" type="text" placeholder="Номер лицевого счета...">
+        </div>   
+        <div class="save-nomer">
+          <input type="submit" value="Изменить">
+        </div>
+
+        <div class="tarif">
+          <input id="tarif-input" type="text" placeholder="Текущий тариф...">
+        </div>   
+        <div class="save-tarif">
+          <input type="submit" value="Изменить">
+        </div>
+
+        <div class="porfzaniya">
+          <input id="porfzaniya-input" type="text" placeholder="Показания счетчика...">
+        </div>   
+        <div class="save-porfzaniya">
+          <input type="submit" value="Сохранить">
+        </div>
+
+      </div>
+
+      <div class="uslugi">
+        <p> Свет</p>
+      </div>
+    </div>
+{% endblock  %}

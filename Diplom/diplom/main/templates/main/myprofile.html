@@ -1,0 +1,31 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block title %}Профиль{% endblock title %}
+    
+
+{% block content %} 
+    <div class="conteiner">
+      <div class="profile">
+        
+          <div class="image">
+            {% if image %}
+              <img src="{{ image.url }}" alt="" class="profile-image">
+            {% else %}
+            <img src="{% static 'main/img/iconUser.png' %}" alt="" class="profile-image">
+            {% endif %}
+              <span>familiya</span>
+              <span>name</span>
+              <span>otchestvo</span>
+          </div>
+          
+          <div class="right-item">
+              <p>Телефон:         <span>telefone</span></p>
+              <p>e-mail:          <span>номен электронной почты</span></p>
+              <p>Номер квартиры:  <span>nomer_kvartir</span></p>
+              <p>Дата рождения:    <span>birthday</span></p>
+          </div>
+        
+      </div>
+    </div>
+{% endblock  %}
