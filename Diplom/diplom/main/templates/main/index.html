@@ -80,7 +80,11 @@
         </ul>
       </aside>
       <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+          <div class="about-pogoda">
+            {% include "main/pogoda.html" %}
+          </div>
+        {% endblock %}
       </main>    
 
   <footer class="py-4 bg-dark">

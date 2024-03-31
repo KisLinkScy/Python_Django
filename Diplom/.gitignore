@@ -1,4 +1,5 @@
 venv/
+Pogoda/
 .pylintrc
 __pycache__/
 
